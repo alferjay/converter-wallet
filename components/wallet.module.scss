@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: #222;
+}
+
+.wrapper {
+  width: 400px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  table {
+    width: 100%;
+    text-align: left;
+    font-size: 95%;
+    border-collapse: collapse;
+    color: #555;
+  }
+
+  th {
+    text-transform: uppercase;
+    font-size: 70%;
+    padding: 10px 0;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  td {
+    padding: 10px 0;
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.button_primary {
+  padding: 10px;
+  width: 49%;
+  cursor: pointer;
+  background: rgb(36, 125, 226);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background: rgb(15, 88, 170);
+  }
+}
+
+.button_secondary {
+  padding: 10px;
+  width: 49%;
+  cursor: pointer;
+  background: rgb(241, 241, 241);
+  color: rgb(7, 7, 7);
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background: rgb(226, 226, 226);
+  }
+}
+
+.error {
+  color: rgb(255, 80, 80);
+  margin-bottom: 30px;
+  font-size: 95%;
+}
+
+.close_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20pt;
+}
+
+.button_danger {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(231, 34, 34);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(173, 27, 27);
+  }
+}
